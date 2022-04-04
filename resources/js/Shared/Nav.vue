@@ -1,11 +1,13 @@
 <template>
     <nav>
         <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/users">Users</Link></li>
-            <li><Link href="/settings">Settings</Link></li>
+            <li><Link href="/" preserve-scroll>Home</Link></li>
+            <li><Link href="/users" preserve-scroll>Users</Link></li>
+            <li><Link href="/settings" preserve-scroll>Settings</Link></li>
             <li>
-                <Link href="/logout" method="post" as="button">Log out</Link>
+                <Link href="/logout" method="post" as="button" preserve-scroll
+                    >Log out</Link
+                >
             </li>
         </ul>
     </nav>
