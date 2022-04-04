@@ -15,10 +15,19 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('home', [
+    return Inertia::render('Home', [
         'name' => 'prince',
         'frameworks' => [
             'Laravel', 'Vue Js', 'Inertia'
         ]
     ]);
+});
+
+
+Route::get('/users', function () {
+    return Inertia::render('Users');
+});
+
+Route::get('/settings', function () {
+    return Inertia::render('Settings');
 });
