@@ -15,17 +15,11 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Home', [
-        'name' => 'prince',
-        'frameworks' => [
-            'Laravel', 'Vue Js', 'Inertia'
-        ]
-    ]);
+    return Inertia::render('Home');
 });
 
 
 Route::get('/users', function () {
-    sleep(2);
     return Inertia::render('Users');
 });
 
